@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/faleconosco.css">
+    <title>FALE CONOSCO - Hotel Vista Serena</title>
+</head>
+<body>
+    <!--                             HEADER                              -->
+
+    <header>
+        <div class="imagem">
+        </div>
+        <div class="overlay">
+            <div class="logo">
+                <img src="./img/Icons/LOGO_branca.png" alt="Logo" class="logo-image">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#promocoes">Promoções</a></li>
+                    <li><a href="#pontos-turisticos">Pontos Turísticos</a></li>
+                    <li><a href="#pontos-turisticos">Area Recreativa</a></li>
+                    <li><a href="#pontos-turisticos">Acomodações</a></li>
+                    <li><a href="#fale-conosco" class="button">Fale Conosco</a></li>
+                </ul>
+            </nav>
+            <div class="text-image">
+                <img src="./img/escrita_logo.PNG" alt="Texto" class="text-image-content">
+            </div>
+        </div>
+    </header>
+
+    <!--                         FIM HEADER                              -->
+
+    <!--                            TITLE                                -->
+
+    <div class="fhcontainertitle">
+        <div>
+            <img width="50px" height="50px" id="titleicon" src="./img/Icons/LOGO_preta.png" alt="logoicon">
+            <h1>FALE COM HOTEL VISTA SERENA</h1>
+        </div>
+    </div>
+
+    <!--                          FIM TITLE                              -->
+
+    <!--                           HELPBOX                               -->
+    
+    <div class="fhcontainerhelpbox">
+        <div class="fhhb"> <!-- BOX 1 FORMULARIO-->
+            <div>
+                <img height="50px" width="50px" src="./img/Icons/box_form_icon.png" alt="formimg">
+            </div>
+            <div class="fhhbtitle">
+                <h2>FORMULARIO</h2>
+            </div>
+            <div>
+                <p>Entre em contato diretamente conosco preenchendo um formulário online.</p>
+            </div>
+        </div>
+        <div class="fhhb"> <!-- BOX 2 TELEFONE-->
+            <div>
+                <img height="50px" width="50px" src="./img/Icons/box_tel_icon.png" alt="contactimg">
+            </div>
+            <div class="fhhbtitle">
+                <h2>TELEFONE</h2>
+            </div>
+            <div>
+                <p>Nos contate através das nossas linhas telefonicas e fale com um de nossos atendentes.</p>
+            </div>
+        </div>
+        <div class="fhhb"> <!-- BOX 3 FAQ-->
+            <div>
+                <img height="50px" width="50px" src="./img/Icons/box_FAQ_icon.png" alt="contactimg">
+            </div>
+            <div class="fhhbtitle">
+                <h2>FAQ</h2>
+            </div>
+            <div>
+                <p>Olhe as duvidas frequentes que recebemos e verifique se sua pergunta ja tem uma resposta.</p>
+            </div>
+        </div>      
+    </div>
+
+    <!--                          FIM HELPBOX                            -->    
+
+    <!--                         FORMULARIO                              -->    
+
+    <div class="fhcontainerform">
+        <div class="fhintroformtitle">
+            <h1>FORMULARIO</h1>
+        </div>
+        <div class="fhcontainerintroform">
+            <P id="fhptextform">Estamos aqui para ajudar! Preencha o formulário abaixo com suas informações e sua mensagem. 
+                Nossa equipe entrará em contato com você o mais breve possível.</P><br>
+            <div class="fhintroformtext">
+                <hr><br>
+                <p class="fhtopicsform"><img src="./img/Icons/form_user_icon.png" alt="fhformuser">
+                    <b>Nome: </b> Informe seu nome para que possamos nos dirigir a você corretamente.</p><br>
+                <p class="fhtopicsform"><img src="./img/Icons/form_email_icon.png" alt="fhformemail">
+                    <b>Email: </b> Forneça um endereço de email válido para que possamos responder à sua mensagem.</p><br>
+                <p class="fhtopicsform"><img src="./img/Icons/form_tel_icon.png" alt="fhformtel">
+                    <b>Telefone: </b> Inclua seu número de telefone caso prefira ser contatado por ligação ou mensagem.</p><br>
+                <p class="fhtopicsform"><img src="./img/Icons/form_msg_icon.png" alt="fhformmsg">
+                    <b>Mensagem: </b> Escreva sua mensagem ou dúvida. Estamos prontos para ouvir você!</p><br>
+            </div>
+        </div>
+        <div class="fhformbox">
+            <form class="fhformform" action=" ">
+                <div class="fhforminput">
+                    <label class="fhlabelform" for="fhnome">NOME</label>
+                    <input type="text" id="fhnome" name="fhnome">
+                </div>
+                <div class="fhforminput">
+                    <label class="fhlabelform" for="fhemail">EMAIL</label>
+                    <input type="email" id="fhemail" placeholder="example@gmail.com" name="fhemail">
+                </div>
+                <div class="fhforminput">
+                    <label class="fhlabelform" for="fhtelefone">TELEFONE</label>
+                    <input type="tel" id="fhtelefone" name="fhtelefone" placeholder="(00) 00000-0000">
+                </div>
+                <div class="fhformtextarea">
+                    <label class="fhlabelform" for="fhformtext">SUA MENSAGEM</label>
+                    <textarea name="fhformtext" placeholder="Digite sua mensagem aqui..." id="fhformtext" required></textarea>
+                </div>
+                <div class="fhcheckboxform">
+                    <label class="fhlabelform" for="fhacceptnews">
+                        <input type="checkbox" id="fhacceptnews" name="news" value="accepted">
+                        Eu aceito receber notícias e novidades sobre Hotel Vista Serena.</label>
+                    <label class="fhlabelform" for="fhacceptterms">
+                        <input type="checkbox" id="fhacceptTerms" name="terms" value="accepted" required>
+                        Eu aceito os <a href=" " id="termslink" target="_blank">termos e condições</a> de Hotel Vista Serena.
+                    </label>
+                </div>
+                <input id="fhformsubimit" type="submit" value="ENVIAR">
+            </form>
+        </div>
+    </div>
+
+    <!--                        FIM FORMULARIO                           --> 
+
+    <!--                             TEL                                 -->
+
+    <div class="fhtitlelisttel">
+        <h1>LIGUE PARA GENTE</h1>
+    </div>
+    <div class="fhcontainerlisttel">
+        <div class="fhlisttelsac">
+            <p class="fhlistel-sacedit"><img src="./img/Icons/listtel_sac_icon.png" alt="sac-imagem-listtel">
+                <b>0800 762 7777</b> Para capitais e regiões metropolitanas</p><br>
+            <p class="fhlistel-sacedit"><img src="./img/Icons/listtel_ext_icon.png" alt="ext-imagem-listtel">
+                <b>55 11 3012 3336</b> Para o exterior, ligue a cobrar</p><br>
+            <p class="fhlistel-sacedit"><img src="./img/Icons/listtel_pcd_icon.png" alt="pcd-imagem-listtel">
+                <b>0800 771 0401</b> Para pessoas com deficiência auditiva e de fala</p><br>
+        </div>
+        <div class="fhlisttelfixzap">
+            <p class="fhlistel-sacedit"><img src="./img/Icons/listtel_balcon_icon.png" alt="recp-imagem-listtel">
+                <b>(16) 94402-0922</b> Para falar com a recepcção</p><br>
+            <p class="fhlistel-sacedit"><img src="./img/Icons/listtel_telfix_icon.png" alt="fix-imagem-listtel">
+                <b>(16) 3665-0606</b> Nosso telefone fixo</p><br>
+            <p class="fhlistel-sacedit"><img src="./img/Icons/listtel_zap_icon.png" alt="zap-imagem-listtel">
+                <b>(16) 99808-5645</b> Para nosso Whatsapp</p><br>
+        </div>
+    </div>
+
+    <!--                           FIM TEL                               -->
+
+    <!--                           LUIZ                                  -->
+
+    
+    <div class="faq-container">
+        <h1 id="fhtitle-faq">FAQ</h1>
+        <div class="faq">
+            <div class="faq-question">Quais são os tipos de quartos disponíveis e quais são suas características?</div>
+            <div class="faq-answer">
+                <p><b>Quarto Standard:</b> Cama queen-size, TV de tela plana, Wi-Fi gratuito, e banheiro privativo.</p>
+                <p><b>Quarto Deluxe:</b> Cama king-size, área de estar separada, varanda com vista para o mar, e minibar.</p>
+                <p><b>Suite Executiva:</b> Cama king-size, sala de estar, escritório, jacuzzi e acesso ao lounge executivo.</p>
+            </div>
+        </div>
+    
+        <div class="faq">
+            <div class="faq-question">Qual é o preço das diárias e o que está incluído nesse valor?</div>
+            <div class="faq-answer">As diárias variam de R$250 a R$500, dependendo do tipo de quarto e da temporada. Todos os preços incluem café da manhã, acesso ao Wi-Fi, e uso da piscina e academia.</div>
+        </div>
+    
+        <div class="faq">
+            <div class="faq-question">O hotel oferece algum tipo de desconto ou promoção especial?</div>
+            <div class="faq-answer">Sim, o hotel oferece uma promoção de 15% de desconto para reservas de mais de 3 noites. Além disso, há uma tarifa especial para reservas antecipadas e pacotes para lua de mel com benefícios adicionais.</div>
+        </div>
+    
+        <div class="faq">
+            <div class="faq-question">Qual é a política de cancelamento e reembolso?</div>
+            <div class="faq-answer">As reservas podem ser canceladas sem custo até 48 horas antes da data de check-in. Cancelamentos feitos com menos de 48 horas de antecedência estarão sujeitos a uma taxa de uma diária. Reembolsos são processados em até 7 dias úteis.</div>
+        </div>
+    
+        <div class="faq">
+            <div class="faq-question">O hotel oferece estacionamento gratuito ou pago?</div>
+            <div class="faq-answer">O Hotel Vista Alegre oferece estacionamento gratuito para todos os hóspedes. Há também opções de estacionamento coberto e valet por uma taxa adicional.</div>
+        </div>
+    
+        <div class="faq">
+            <div class="faq-question">Há opções de transporte para o aeroporto ou transporte público nas proximidades?</div>
+            <div class="faq-answer">Sim, oferecemos um serviço de transfer para o aeroporto por uma taxa adicional. O hotel está localizado a 200 metros da estação de metrô mais próxima e há várias linhas de ônibus nas imediações.</div>
+        </div>
+    
+        <div class="faq">
+            <div class="faq-question">O hotel tem acesso a Wi-Fi gratuito?</div>
+            <div class="faq-answer">Sim, o Wi-Fi é gratuito em todas as áreas do hotel, incluindo quartos, lobby e áreas comuns.</div>
+        </div>
+    
+        <div class="faq">
+            <div class="faq-question">Quais são as opções de refeições disponíveis no hotel? Existe um restaurante ou serviço de quarto?</div>
+            <div class="faq-answer">O hotel dispõe de um restaurante chamado "Vista Gourmet", que serve café da manhã, almoço e jantar com opções locais e internacionais. Também oferecemos serviço de quarto 24 horas.</div>
+        </div>
+    
+        <div class="faq">
+            <div class="faq-question">Quais comodidades e serviços estão incluídos, como academia, piscina, spa, ou lavanderia?</div>
+            <div class="faq-answer">Os hóspedes têm acesso gratuito à academia e à piscina. O hotel também possui um spa com uma variedade de tratamentos, disponível com custo adicional. Além disso, oferecemos serviços de lavanderia e limpeza a seco.</div>
+        </div>
+    
+        <div class="faq">
+            <div class="faq-question">O hotel é acessível para pessoas com deficiência?</div>
+            <div class="faq-answer">Sim, todos os hotéis são acessíveis para pessoas com deficiência. Temos quartos adaptados, rampas de acesso, elevadores e banheiros adaptados para garantir uma estadia confortável para todos os nossos hóspedes.</div>
+        </div>
+    </div>    
+       
+        <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', () => {
+        const faq = item.parentElement;
+        faq.classList.toggle('active');
+        });
+        });
+        </script>
+
+    <!--                          FIM LUIZ                               -->
+
+    <!--                           POP UP                                -->
+
+    <div class="fhpopup" id="fhpopup">
+        <span class="fhclose-btn" id="fhclose-btn">&times;</span>
+        <div class="fhcontainericontitlepopup">
+            <div class="fhiconpopup">
+                <img src="./img/Icons/whatsapp-logo.png" alt="zaplogo">
+            </div>
+            <div class="fhpopuptitle">Mande uma mensagem!</div>
+        </div>
+        <div class="fhpopuptext">Dúvidas? Entre em contato conosco diretamente pelo nosso <span style="color:#075e54">Whatsapp</span> agora.</div>
+        <div class="fhcontainerbuttonpopup">
+            <button><a href="https://chat.whatsapp.com/JgWADxLiqQH8v9hOnwmH7vS" class="fhpopuplink">MANDAR MENSAGEM</a></button>
+        </div>
+        <script src="./js/popzap.js"></script>
+    </div>
+    
+
+    <!--                          FIM POP UP                             -->
+                            
+    <!--                             FOOTER                              -->
+    
+    <footer id="footer">
+        <div class="icons-container">
+            <div class="icon">
+                <img src="./img/Icons/ICONE_FACEBOOK.png" width="40px" height="40px" alt="Facebook">
+                <span>Facebook</span>
+            </div>
+            <div class="icon">
+                <img src="./img/Icons/ICONE_GIITHUB.png" width="40px" height="40px" alt="GitHub">
+                <span>GitHub</span>
+            </div>
+            <div class="icon">
+                <img src="./img/Icons/ICONE_GOOGLE.png" width="40px" height="40px" alt="Google">
+                <span>Google</span>
+            </div>
+            <div class="icon">
+                <img src="./img/Icons/icone_instagram.png" width="40px" height="40px" alt="Instagram">
+                <span>Instagram</span>
+            </div>
+            <div class="icon">
+                <img src="./img/Icons/icone_threads.png" width="40px" height="40px" alt="Threads">
+                <span>Threads</span>
+            </div>
+        </div>
+        <div class="footer-text">
+            <p style="color: white; text-align: center; margin-top: 10px;">© 2024 Vista Serena Hotel. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!--                         FIM FOOTER                              -->
+</body>
+</html>
